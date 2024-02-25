@@ -8,13 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		C7415E262B8918510061DDB2 /* SimpleTimerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7415E252B8918510061DDB2 /* SimpleTimerApp.swift */; };
-		C7415E282B8918510061DDB2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7415E272B8918510061DDB2 /* ContentView.swift */; };
+		C7415E282B8918510061DDB2 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7415E272B8918510061DDB2 /* TimerView.swift */; };
 		C7415E2A2B8918510061DDB2 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7415E292B8918510061DDB2 /* Item.swift */; };
 		C7415E2C2B8918520061DDB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7415E2B2B8918520061DDB2 /* Assets.xcassets */; };
 		C7415E2F2B8918520061DDB2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7415E2E2B8918520061DDB2 /* Preview Assets.xcassets */; };
 		C7415E392B8918520061DDB2 /* SimpleTimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7415E382B8918520061DDB2 /* SimpleTimerTests.swift */; };
 		C7415E432B8918520061DDB2 /* SimpleTimerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7415E422B8918520061DDB2 /* SimpleTimerUITests.swift */; };
 		C7415E452B8918520061DDB2 /* SimpleTimerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7415E442B8918520061DDB2 /* SimpleTimerUITestsLaunchTests.swift */; };
+		C7415E532B8918FF0061DDB2 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = C7415E522B8918FF0061DDB2 /* ComposableArchitecture */; };
+		C7415E552B891A9A0061DDB2 /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7415E542B891A9A0061DDB2 /* TimerViewModel.swift */; };
+		C7415E572B8927580061DDB2 /* CountUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7415E562B8927580061DDB2 /* CountUpView.swift */; };
+		C7415E592B8BE7CC0061DDB2 /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7415E582B8BE7CC0061DDB2 /* OverlayView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +41,7 @@
 /* Begin PBXFileReference section */
 		C7415E222B8918510061DDB2 /* SimpleTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7415E252B8918510061DDB2 /* SimpleTimerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTimerApp.swift; sourceTree = "<group>"; };
-		C7415E272B8918510061DDB2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C7415E272B8918510061DDB2 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		C7415E292B8918510061DDB2 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		C7415E2B2B8918520061DDB2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C7415E2E2B8918520061DDB2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -46,6 +50,9 @@
 		C7415E3E2B8918520061DDB2 /* SimpleTimerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleTimerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7415E422B8918520061DDB2 /* SimpleTimerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTimerUITests.swift; sourceTree = "<group>"; };
 		C7415E442B8918520061DDB2 /* SimpleTimerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTimerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C7415E542B891A9A0061DDB2 /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
+		C7415E562B8927580061DDB2 /* CountUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountUpView.swift; sourceTree = "<group>"; };
+		C7415E582B8BE7CC0061DDB2 /* OverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7415E532B8918FF0061DDB2 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,10 +105,13 @@
 			isa = PBXGroup;
 			children = (
 				C7415E252B8918510061DDB2 /* SimpleTimerApp.swift */,
-				C7415E272B8918510061DDB2 /* ContentView.swift */,
+				C7415E272B8918510061DDB2 /* TimerView.swift */,
 				C7415E292B8918510061DDB2 /* Item.swift */,
 				C7415E2B2B8918520061DDB2 /* Assets.xcassets */,
 				C7415E2D2B8918520061DDB2 /* Preview Content */,
+				C7415E542B891A9A0061DDB2 /* TimerViewModel.swift */,
+				C7415E562B8927580061DDB2 /* CountUpView.swift */,
+				C7415E582B8BE7CC0061DDB2 /* OverlayView.swift */,
 			);
 			path = SimpleTimer;
 			sourceTree = "<group>";
@@ -146,6 +157,9 @@
 			dependencies = (
 			);
 			name = SimpleTimer;
+			packageProductDependencies = (
+				C7415E522B8918FF0061DDB2 /* ComposableArchitecture */,
+			);
 			productName = SimpleTimer;
 			productReference = C7415E222B8918510061DDB2 /* SimpleTimer.app */;
 			productType = "com.apple.product-type.application";
@@ -218,6 +232,9 @@
 				Base,
 			);
 			mainGroup = C7415E192B8918510061DDB2;
+			packageReferences = (
+				C7415E512B8918FF0061DDB2 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = C7415E232B8918510061DDB2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -260,8 +277,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7415E282B8918510061DDB2 /* ContentView.swift in Sources */,
+				C7415E552B891A9A0061DDB2 /* TimerViewModel.swift in Sources */,
+				C7415E282B8918510061DDB2 /* TimerView.swift in Sources */,
 				C7415E2A2B8918510061DDB2 /* Item.swift in Sources */,
+				C7415E592B8BE7CC0061DDB2 /* OverlayView.swift in Sources */,
+				C7415E572B8927580061DDB2 /* CountUpView.swift in Sources */,
 				C7415E262B8918510061DDB2 /* SimpleTimerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -592,6 +612,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C7415E512B8918FF0061DDB2 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.8.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C7415E522B8918FF0061DDB2 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C7415E512B8918FF0061DDB2 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C7415E1A2B8918510061DDB2 /* Project object */;
 }

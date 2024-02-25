@@ -1,5 +1,5 @@
 //
-//  Item.swift
+//  TimerItem.swift
 //  SimpleTimer
 //
 //  Created by Brad Siegel on 2/23/24.
@@ -9,7 +9,7 @@ import Foundation
 import SwiftData
 
 @Model
-final class Item {
+final class TimerItem {
     var timestamp: Date
     
     init(timestamp: Date) {
